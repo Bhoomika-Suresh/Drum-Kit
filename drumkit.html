@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modern Drum Kit</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto+Slab:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./drumkit.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">
+        <h1>Drum Master</h1>
+        <div class="drum-icon">🥁</div>
+      </div>
+      <p class="subtitle">Create beats with your keyboard or mouse. Record your sessions and play them back!</p>
+    </header>
+    
+    <div class="main-content">
+      <div class="drum-section">
+        <h2 class="section-title">Drum Pads</h2>
+        <div class="drum-set">
+          <div class="drum" data-key="w">
+            <div>W</div>
+            <div class="drum-label">Tom 1</div>
+          </div>
+          <div class="drum" data-key="a">
+            <div>A</div>
+            <div class="drum-label">Tom 2</div>
+          </div>
+          <div class="drum" data-key="s">
+            <div>S</div>
+            <div class="drum-label">Tom 3</div>
+          </div>
+          <div class="drum" data-key="d">
+            <div>D</div>
+            <div class="drum-label">Tom 4</div>
+          </div>
+          <div class="drum" data-key="j">
+            <div>J</div>
+            <div class="drum-label">Crash</div>
+          </div>
+          <div class="drum" data-key="k">
+            <div>K</div>
+            <div class="drum-label">Kick Bass</div>
+          </div>
+          <div class="drum" data-key="l">
+            <div>L</div>
+            <div class="drum-label">Snare</div>
+          </div>
+        </div>
+        
+        <div class="visualizer" id="visualizer">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+      </div>
+      
+      <div class="controls-section">
+        <div class="control-panel">
+          <h2 class="section-title">Keyboard Guide</h2>
+          <div class="key-guide">
+            <div class="key-item">
+              <div class="key-char">W</div>
+              <div class="key-desc">High Tom</div>
+            </div>
+            <div class="key-item">
+              <div class="key-char">A</div>
+              <div class="key-desc">Mid-High Tom</div>
+            </div>
+            <div class="key-item">
+              <div class="key-char">S</div>
+              <div class="key-desc">Mid-Low Tom</div>
+            </div>
+            <div class="key-item">
+              <div class="key-char">D</div>
+              <div class="key-desc">Low Tom</div>
+            </div>
+            <div class="key-item">
+              <div class="key-char">J</div>
+              <div class="key-desc">Crash Cymbal</div>
+            </div>
+            <div class="key-item">
+              <div class="key-char">K</div>
+              <div class="key-desc">Kick Bass</div>
+            </div>
+            <div class="key-item">
+              <div class="key-char">L</div>
+              <div class="key-desc">Snare Drum</div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="control-panel recorder">
+          <h2 class="section-title">Recording Studio</h2>
+          <div class="recorder-display" id="recorder-display">
+            Press Record to start recording your drum session
+          </div>
+          <div class="recorder-controls">
+            <button class="btn" id="record-btn">
+              <i>●</i> Record
+            </button>
+            <button class="btn btn-secondary" id="stop-btn" disabled>
+              <i>■</i> Stop
+            </button>
+            <button class="btn btn-secondary" id="play-btn" disabled>
+              <i>▶</i> Play
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <footer>
+      Made with ♥ by Bhoomika S | Modern Drum Kit Project
+    </footer>
+  </div>
+
+  <script src="./drumkit.js"></script>
+</body>
+</html>

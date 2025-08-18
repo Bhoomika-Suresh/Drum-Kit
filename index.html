@@ -1,35 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Drum Kit</title>
-  <link rel="stylesheet" href="styles.css">
-  <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Drum Master | Interactive Drum Kit</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="assets/drum-logo.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">
 </head>
-
 <body>
-  <main>
-    <h1 id="title">Drum 🥁 Kit</h1>
-  <div class="set">
-    <button class="w drum">w</button>
-    <button class="a drum">a</button>
-    <button class="s drum">s</button>
-    <button class="d drum">d</button>
-    <button class="j drum">j</button>
-    <button class="k drum">k</button>
-    <button class="l drum">l</button>
+  <div class="container">
+    <header>
+      <div class="logo">
+        <h1>🥁 Drum Master</h1>
+      </div>
+      <p class="subtitle">Play drums with your keyboard or mouse. Record your beats, visualize them, and share!</p>
+    </header>
+
+    <main class="main-content">
+      <section class="drum-section">
+        <h2 class="section-title">Drum Pads</h2>
+        <div class="drum-set">
+          <div class="drum" data-key="w">W<div class="drum-label">Tom 1</div></div>
+          <div class="drum" data-key="a">A<div class="drum-label">Tom 2</div></div>
+          <div class="drum" data-key="s">S<div class="drum-label">Tom 3</div></div>
+          <div class="drum" data-key="d">D<div class="drum-label">Tom 4</div></div>
+          <div class="drum" data-key="j">J<div class="drum-label">Crash</div></div>
+          <div class="drum" data-key="k">K<div class="drum-label">Kick</div></div>
+          <div class="drum" data-key="l">L<div class="drum-label">Snare</div></div>
+        </div>
+
+        <div class="visualizer" id="visualizer">
+          <!-- Bars will be generated dynamically -->
+        </div>
+      </section>
+
+      <section class="controls-section">
+        <div class="control-panel">
+          <h2 class="section-title">Keyboard Guide</h2>
+          <div class="key-guide">
+            <div class="key-item"><div class="key-char">W</div><div class="key-desc">Tom 1</div></div>
+            <div class="key-item"><div class="key-char">A</div><div class="key-desc">Tom 2</div></div>
+            <div class="key-item"><div class="key-char">S</div><div class="key-desc">Tom 3</div></div>
+            <div class="key-item"><div class="key-char">D</div><div class="key-desc">Tom 4</div></div>
+            <div class="key-item"><div class="key-char">J</div><div class="key-desc">Crash</div></div>
+            <div class="key-item"><div class="key-char">K</div><div class="key-desc">Kick</div></div>
+            <div class="key-item"><div class="key-char">L</div><div class="key-desc">Snare</div></div>
+          </div>
+        </div>
+
+        <div class="control-panel recorder">
+          <h2 class="section-title">Recording Studio</h2>
+          <div class="recorder-display" id="recorder-display">Press Record to start 🎙️</div>
+          <div class="recorder-controls">
+            <button class="btn" id="record-btn">● Record</button>
+            <button class="btn btn-secondary" id="stop-btn" disabled>■ Stop</button>
+            <button class="btn btn-secondary" id="play-btn" disabled>▶ Play</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      Made with ❤️ by Bhoomika S | Modern Drum Kit Project
+    </footer>
   </div>
-  </main>
-  <footer>
-    Made by Bhoomika S
-  </footer>
-
-
-
-
-  <script src="./index.js"></script>
+  
+  <script src="script.js"></script>
 </body>
-
 </html>
